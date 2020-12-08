@@ -1,0 +1,63 @@
+body{
+  Background-color:rgb(255, 213, 36);
+}
+.big-headers{
+  color:rgb(85, 24, 93);
+  text-align:center;
+  text-decoration:underline;
+}
+#smaller-headers{
+  color:rgb(85, 24, 93);
+  text-decoration:underline;
+}
+.writing{
+  color:rgb(84, 22, 180);
+  
+}
+#image{
+  border-style:double;
+  padding:5px;
+  margin:10px;
+  
+}
+#image:hover{
+    filter: hue-rotate(90deg);
+}
+a:hover{
+    font-size:30px;
+}
+h2{
+    text-align:center;
+}
+/* Below is the the positioning of the piano picture*/
+.piano{
+    float:right;
+    display:inline-block;
+    border-style:double;
+  padding:5px;
+  margin:10px;
+  width:200px;
+  height:200px;
+}
+/*This section im going to put the animation*/
+img.piano{
+    animation: invertFilter 4s forwards;
+}
+@keyframes invertFilter{
+    from{
+        filter: invert(0%)
+    }
+    to{
+        filter: invert(100%)
+    }
+}
+
+/*End of Animation section*/
+td.food {
+     visibility:visible;
+}
+td.food:hover {
+    
+    color:red;
+   visibility: hidden;
+}
